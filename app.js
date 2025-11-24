@@ -6,7 +6,7 @@ const app = express();
 app.use(cors());
 
 app.get("/hello", (req, res) => {
-  res.json({ message: "Backend is running" });
+  res.json(["James", "Mary", "Robert", "Patricia", "John"]);
 });
 
 const PORT = process.env.PORT || 3000;
